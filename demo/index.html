@@ -1,0 +1,43 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh_cn" lang="zh_cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+    <title>rtmp push</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script data-main="main" src="demo/require.js"></script>
+    <script>
+
+    </script>
+</head>
+<body style="text-align: center;">
+
+<input id="url" type="text" style="width: 400px;display:none" value="rtmp://rtmp.yuantianci.com:1935/ytc" title="url">
+<input id="stream-name" type="text" style="width: 150px;display:none" value="myStream" title="stream-name">
+
+<object>
+    <embed id="rtmp-streamer" src="RtmpStreamer.swf" bgcolor="#999999" quality="high"
+           width="266" height="400" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>
+</object>
+<br>
+<button id="publish"> push</button>
+<button id="streamer-disconnect"> disconnect</button>
+
+<div style="display: none;">
+<hr>
+
+<h2>Player</h2>
+<object>
+    <embed id="rtmp-player" src="RtmpStreamer.swf" bgcolor="#999999" quality="high"
+           width="266" height="400" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>
+</object>
+<br>
+<button id="play"> play</button>
+<button id="player-disconnect"> disconnect</button>
+</div>
+
+</body>
+
+<script lang="javascript">
+
+</script>
+
+</html>
